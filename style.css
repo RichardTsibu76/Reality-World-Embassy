@@ -1,3 +1,15 @@
+body{
+
+    font-family: 'poppins', sans-serif;
+    line-height: 1.6;
+}
+
+html{
+
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,21 +20,24 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 1rem 2rem;
     background: #000000;
     position: relative;
 }
 
 .logo img{
-    height: 70px;   
+    height: 60px;   
 }
 
 .nav-links a{
     display: flex;
     text-decoration: none;
     color: white;
-    flex-direction: row;
-    font-weight: bold;
+    transition: color 0.3s ease;
+ 
+    
+    cursor: pointer;
 }
 
 .nav-links {
@@ -34,5 +49,6 @@ nav{
   }
 
   .nav-links a:hover{
-    background-color: #6a6960;
+    background-color: #d29c14dd;
+    border-radius: 20px;
   }
